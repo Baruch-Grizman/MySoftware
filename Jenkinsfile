@@ -2,10 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('NewButton') {
             steps {
-                echo 'Hello World'
+                click()
             }
         }
     }
+}
+
+def click() {
+    println("Click")
 }
