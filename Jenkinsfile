@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -7,9 +8,18 @@ pipeline {
                 click()
             }
         }
+        stage('NewScreen') {
+            steps {
+                welcome()
+            }
+        }
     }
 }
 
 def click() {
     println("Click")
+}
+
+def welcome() {
+    println("New Screen")
 }
