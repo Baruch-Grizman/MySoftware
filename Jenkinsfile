@@ -2,10 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('NewScreen') {
             steps {
-                echo 'Hello World'
+                welcome()
             }
         }
     }
+}
+
+def welcome() {
+    println("New Screen")
 }
